@@ -1,13 +1,13 @@
-package com.example.zodiaxbackend;
+package runner;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ZodiaxBackendApplication {
+public class ZodiaxApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(ZodiaxBackendApplication.class, args);
+        SpringApplication.run(ZodiaxApp.class, args);
     }
 
 }

@@ -1,10 +1,10 @@
-package com.example.zodiaxbackend;
+package runner;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ZodiaxBackendApplicationTests {
+class ZodiaxAppTests {
 
     @Test
     void contextLoads() {
