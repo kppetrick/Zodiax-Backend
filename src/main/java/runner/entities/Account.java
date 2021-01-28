@@ -10,7 +10,7 @@ import javax.persistence.Id;
 @Entity
 public class Account {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
     private String username;
@@ -19,7 +19,6 @@ public class Account {
 
     public Account() {
     }
-
     public Account(String username, String password, Integer rating) {
         this.username = username;
         this.password = password;
@@ -27,18 +26,10 @@ public class Account {
     }
 
     public Long getId() { return id; }
-
-    public void setId(Long id) { this.id = id; }
-
     public String getUsername() { return username; }
-
     public void setUsername(String username) { this.username = username; }
-
     public String getPassword() { return password; }
-
     public void setPassword(String password) { this.password = password; }
-
     public Integer getRating() { return rating; }
-
     public void setRating(Integer rating) { this.rating = rating; }
 }
